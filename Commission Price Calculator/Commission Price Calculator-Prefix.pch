@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Commission Price Calculator' target in the 'Commission Price Calculator' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
