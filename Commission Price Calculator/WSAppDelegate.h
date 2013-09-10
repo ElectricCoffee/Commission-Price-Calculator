@@ -12,4 +12,16 @@
 
 @property (assign) IBOutlet NSWindow *window;
 
+@property (weak) IBOutlet NSTextField *priceField;
+
+@property (weak) IBOutlet NSTextField *currencyField;
+
+@property (weak) IBOutlet NSPopUpButton *typePopUp;
+
+@property (weak) IBOutlet NSTextField *additionalField;
+
+@property (weak) IBOutlet NSTextField *additionalLabel;
+
+- (IBAction)calculateButton:(id)sender;
+
 @end
