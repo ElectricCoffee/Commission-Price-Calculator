@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6864283E17E061CB00AE0919 /* icon_256x256.png in Resources */ = {isa = PBXBuildFile; fileRef = 6864283D17E061CB00AE0919 /* icon_256x256.png */; };
+		6864284017E061D600AE0919 /* Icon.iconset in Resources */ = {isa = PBXBuildFile; fileRef = 6864283F17E061D600AE0919 /* Icon.iconset */; };
 		68EC9B2517DE2C4100A82B4A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68EC9B2417DE2C4100A82B4A /* Cocoa.framework */; };
 		68EC9B2F17DE2C4100A82B4A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 68EC9B2D17DE2C4100A82B4A /* InfoPlist.strings */; };
 		68EC9B3117DE2C4100A82B4A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 68EC9B3017DE2C4100A82B4A /* main.m */; };
@@ -30,6 +32,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6864283D17E061CB00AE0919 /* icon_256x256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_256x256.png; sourceTree = "<group>"; };
+		6864283F17E061D600AE0919 /* Icon.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = Icon.iconset; sourceTree = "<group>"; };
 		68EC9B2117DE2C4100A82B4A /* Commission Price Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Commission Price Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		68EC9B2417DE2C4100A82B4A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		68EC9B2717DE2C4100A82B4A /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -75,6 +79,8 @@
 		68EC9B1817DE2C4100A82B4A = {
 			isa = PBXGroup;
 			children = (
+				6864283F17E061D600AE0919 /* Icon.iconset */,
+				6864283D17E061CB00AE0919 /* icon_256x256.png */,
 				68EC9B2A17DE2C4100A82B4A /* Commission Price Calculator */,
 				68EC9B4717DE2C4200A82B4A /* Commission Price CalculatorTests */,
 				68EC9B2317DE2C4100A82B4A /* Frameworks */,
@@ -228,6 +234,8 @@
 				68EC9B2F17DE2C4100A82B4A /* InfoPlist.strings in Resources */,
 				68EC9B3517DE2C4100A82B4A /* Credits.rtf in Resources */,
 				68EC9B3B17DE2C4200A82B4A /* MainMenu.xib in Resources */,
+				6864283E17E061CB00AE0919 /* icon_256x256.png in Resources */,
+				6864284017E061D600AE0919 /* Icon.iconset in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,6 +461,7 @@
 				68EC9B5417DE2C4200A82B4A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		68EC9B5517DE2C4200A82B4A /* Build configuration list for PBXNativeTarget "Commission Price CalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -461,6 +470,7 @@
 				68EC9B5717DE2C4200A82B4A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
