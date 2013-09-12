@@ -34,11 +34,12 @@ void alert(NSString* message, NSString* informative) {
 }
 
 - (IBAction)itemChanged:(id)sender {
-    NSInteger index = [(NSPopUpButton*)sender selectedTag];
+    NSInteger index = [(NSPopUpButton*)sender indexOfSelectedItem];
     switch (index) {
             
         case ItemChooseOne:
-            // do Nothing
+            _currency = @" ";
+            [additionalLabel setStringValue: _currency];
             break;
             
         case ItemPricePerCharacter:
