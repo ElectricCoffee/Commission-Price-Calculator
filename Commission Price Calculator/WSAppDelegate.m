@@ -12,8 +12,8 @@
 
 @synthesize priceField, currencyField, typePopUp, additionalField, additionalLabel;
 
-- (void)applicationDidFinishLaunching:(NSNotification *)aNotification
-{
+- (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
+    _price = 0.0;
     [typePopUp removeAllItems];
     [typePopUp addItemsWithTitles:
      [NSArray arrayWithObjects:
@@ -21,5 +21,16 @@
 }
 
 - (IBAction)calculateButton:(id)sender {
+    
+    if(![[NSScanner scannerWithString: [priceField stringValue]] scanDouble: &_price]) {
+        NSAlert* alert = [[NSAlert alloc] init];
+        [alert setMessageText: @"Error"];
+        [alert setInformativeText: @"Invalid input!"];
+        [alert runModal];
+    }
+    else {
+        
+    }
 }
+
 @end

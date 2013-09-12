@@ -8,7 +8,9 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface WSAppDelegate : NSObject <NSApplicationDelegate>
+@interface WSAppDelegate : NSObject <NSApplicationDelegate> {
+    double _price;
+}
 
 @property (assign) IBOutlet NSWindow *window;
 
