@@ -10,6 +10,7 @@
 
 @interface WSAppDelegate : NSObject <NSApplicationDelegate> {
     double _price;
+    NSString* _currency;
 }
 
 @property (assign) IBOutlet NSWindow *window;
@@ -23,6 +24,8 @@
 @property (weak) IBOutlet NSTextField *additionalField;
 
 @property (weak) IBOutlet NSTextField *additionalLabel;
+
+- (IBAction)itemChanged:(id)sender;
 
 - (IBAction)calculateButton:(id)sender;
 
