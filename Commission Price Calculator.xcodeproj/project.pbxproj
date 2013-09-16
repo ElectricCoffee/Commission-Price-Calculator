@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		6864283E17E061CB00AE0919 /* icon_256x256.png in Resources */ = {isa = PBXBuildFile; fileRef = 6864283D17E061CB00AE0919 /* icon_256x256.png */; };
 		6864284017E061D600AE0919 /* Icon.iconset in Resources */ = {isa = PBXBuildFile; fileRef = 6864283F17E061D600AE0919 /* Icon.iconset */; };
+		68BDFD9417E709850093B2EF /* WSLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 68BDFD9317E709850093B2EF /* WSLogic.m */; };
 		68EC9B2517DE2C4100A82B4A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68EC9B2417DE2C4100A82B4A /* Cocoa.framework */; };
 		68EC9B2F17DE2C4100A82B4A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 68EC9B2D17DE2C4100A82B4A /* InfoPlist.strings */; };
 		68EC9B3117DE2C4100A82B4A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 68EC9B3017DE2C4100A82B4A /* main.m */; };
@@ -34,6 +35,8 @@
 /* Begin PBXFileReference section */
 		6864283D17E061CB00AE0919 /* icon_256x256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_256x256.png; sourceTree = "<group>"; };
 		6864283F17E061D600AE0919 /* Icon.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = Icon.iconset; sourceTree = "<group>"; };
+		68BDFD9217E709850093B2EF /* WSLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WSLogic.h; path = ../WSLogic.h; sourceTree = "<group>"; };
+		68BDFD9317E709850093B2EF /* WSLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WSLogic.m; path = ../WSLogic.m; sourceTree = "<group>"; };
 		68EC9B2117DE2C4100A82B4A /* Commission Price Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Commission Price Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		68EC9B2417DE2C4100A82B4A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		68EC9B2717DE2C4100A82B4A /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -131,6 +134,8 @@
 		68EC9B2B17DE2C4100A82B4A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				68BDFD9217E709850093B2EF /* WSLogic.h */,
+				68BDFD9317E709850093B2EF /* WSLogic.m */,
 				68EC9B2C17DE2C4100A82B4A /* Commission Price Calculator-Info.plist */,
 				68EC9B2D17DE2C4100A82B4A /* InfoPlist.strings */,
 				68EC9B3017DE2C4100A82B4A /* main.m */,
@@ -272,6 +277,7 @@
 			files = (
 				68EC9B3117DE2C4100A82B4A /* main.m in Sources */,
 				68EC9B3817DE2C4100A82B4A /* WSAppDelegate.m in Sources */,
+				68BDFD9417E709850093B2EF /* WSLogic.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
