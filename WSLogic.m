@@ -13,6 +13,19 @@ const int ARRAY_SIZE = 3;
 
 @implementation WSLogic
 
+// MARK: Private Members
+//to be finished
+-(void) writeToFileWithSelector: (SEL)selector price: (double) price andModifier: (double) extraItems {
+    for (int i = 0; i < 10; i++) {
+        [self
+         performSelector: selector
+         withObject: [NSArray arrayWithObjects:
+                      [NSNumber numberWithDouble: price],
+                      [NSNumber numberWithDouble: extraItems],
+                      [NSNumber numberWithDouble: i], nil] ];
+    }
+}
+
 -(double)calculatePercent: (NSArray*) array {
     if([array count] == ARRAY_SIZE) { // it MUST be 3
         double
@@ -39,13 +52,17 @@ const int ARRAY_SIZE = 3;
     else return 0;
 }
 
--(id)calculateType: (NSInteger)enumerator price: (double)price extraItems:(double)extraItems andCurrency: (NSString*)currency {
+// MARK: Public Members
+-(void)calculateType: (NSInteger)enumerator price: (double)price extraItems:(double)extraItems andCurrency: (NSString*)currency {
     switch (enumerator) {
         case ItemPricePerCharacter:
+            
+            [self writeToFileWithSelector:@selector(calculatePrice:) price: price andModifier:extraItems];
             
             break;
             
         case ItemPercentSaved:
+            [self writeToFileWithSelector:@selector(calculatePercent:) price:price andModifier:extraItems];
             break;
             
         default:

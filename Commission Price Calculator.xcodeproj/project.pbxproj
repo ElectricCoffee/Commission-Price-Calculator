@@ -137,12 +137,12 @@
 			children = (
 				68BDFD9217E709850093B2EF /* WSLogic.h */,
 				68BDFD9317E709850093B2EF /* WSLogic.m */,
+				68D8CB20181904F700C7F831 /* ItemIndexes.h */,
 				68EC9B2C17DE2C4100A82B4A /* Commission Price Calculator-Info.plist */,
 				68EC9B2D17DE2C4100A82B4A /* InfoPlist.strings */,
 				68EC9B3017DE2C4100A82B4A /* main.m */,
 				68EC9B3217DE2C4100A82B4A /* Commission Price Calculator-Prefix.pch */,
 				68EC9B3317DE2C4100A82B4A /* Credits.rtf */,
-				68D8CB20181904F700C7F831 /* ItemIndexes.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -212,7 +212,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = WS;
-				LastUpgradeCheck = 0460;
+				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Electric Coffee";
 			};
 			buildConfigurationList = 68EC9B1C17DE2C4100A82B4A /* Build configuration list for PBXProject "Commission Price Calculator" */;
@@ -341,7 +341,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -374,7 +373,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;

@@ -7,6 +7,7 @@
 //
 
 #import "WSAppDelegate.h"
+#import "WSLogic.h"
 #import "ItemIndexes.h" // defines the enum that is used in the switch,
                         // it's used in a separate header so I can use it across classes
 
@@ -61,7 +62,7 @@ void alert(NSString* message, NSString* informative) {
         alert(@"Error", @"Invalid input!");
     }
     else {
-        
+
     }
 }
 
