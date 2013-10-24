@@ -7,9 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ItemIndexes.h"
 
 @interface WSLogic : NSObject
 
--(void)calculateType: (NSInteger)enumerator price: (double)price extraItems:(double)extraItems andCurrency: (NSString*)currency;
+-(void)calculateType: (ItemIndex)enumerator price: (double)price extraItemPrice:(double)extraItemPrice andCurrency: (NSString*)currency;
 
 @end

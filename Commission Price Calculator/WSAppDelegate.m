@@ -8,6 +8,7 @@
 
 #import "WSAppDelegate.h"
 #import "WSLogic.h"
+#import "WSUtility.h"
 #import "ItemIndexes.h" // defines the enum that is used in the switch,
                         // it's used in a separate header so I can use it across classes
 
@@ -20,7 +21,12 @@ void alert(NSString* message, NSString* informative) {
 
 @implementation WSAppDelegate
 
-@synthesize priceField, currencyField, typePopUp, additionalField, additionalLabel;
+@synthesize
+    priceField,
+    currencyField,
+    typePopUp,
+    additionalField,
+    additionalLabel;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     _price = 0.0;
@@ -34,11 +40,6 @@ void alert(NSString* message, NSString* informative) {
     NSInteger index = [(NSPopUpButton*)sender indexOfSelectedItem];
     switch (index) {
             
-        case ItemChooseOne:
-            _currency = @" ";
-            [additionalLabel setStringValue: _currency];
-            break;
-            
         case ItemPricePerCharacter:
             _currency = [currencyField stringValue];
             [additionalLabel setStringValue: _currency];
@@ -49,8 +50,14 @@ void alert(NSString* message, NSString* informative) {
             [additionalLabel setStringValue: _currency];
             break;
             
+        case ItemChooseOne:
+            _currency = @" ";
+            [additionalLabel setStringValue: _currency];
+            //break; // fallthrough (not currently working)
+            
         default:
-            alert(@"Error", @"Please select a calculation type!");
+            [WSUtility alertWithMessage: @"Error"
+                         andInformative: @"Please select a calculation type!"];
             break;
     }
     
@@ -58,8 +65,10 @@ void alert(NSString* message, NSString* informative) {
 
 - (IBAction)calculateButton:(id)sender {
     
-    if(![[NSScanner scannerWithString: [priceField stringValue]] scanDouble: &_price]) {        
-        alert(@"Error", @"Invalid input!");
+    if(![[NSScanner scannerWithString: [priceField stringValue]] scanDouble: &_price]) {
+        
+        [WSUtility alertWithMessage: @"Error"
+                     andInformative: @"Invalid input!"];
     }
     else {
 

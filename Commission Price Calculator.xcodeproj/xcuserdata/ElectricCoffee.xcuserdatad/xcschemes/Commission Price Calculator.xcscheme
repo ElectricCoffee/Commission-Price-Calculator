@@ -37,6 +37,21 @@
                BlueprintName = "Commission Price CalculatorTests"
                ReferencedContainer = "container:Commission Price Calculator.xcodeproj">
             </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "WSTestLogic">
+               </Test>
+            </SkippedTests>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "6847C96A1819ABEC000FADE5"
+               BuildableName = "Commission Price Calculator Tests.xctest"
+               BlueprintName = "Commission Price Calculator Tests"
+               ReferencedContainer = "container:Commission Price Calculator.xcodeproj">
+            </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>

@@ -7,26 +7,36 @@
 //
 
 #import "Commission_Price_CalculatorTests.h"
+#import "WSLogic.h"
+#import "ItemIndexes.h"
 
-@implementation Commission_Price_CalculatorTests
-
-- (void)setUp
-{
-    [super setUp];
-    
-    // Set-up code here.
+@implementation Commission_Price_CalculatorTests {
+    WSLogic* logic;
 }
 
-- (void)tearDown
-{
-    // Tear-down code here.
+- (void)setUp {
+    [super setUp];
+    
+    logic = [WSLogic new];
+}
+
+- (void)tearDown {
     
     [super tearDown];
 }
 
-- (void)testExample
-{
-    STFail(@"Unit tests are not implemented yet in Commission Price CalculatorTests");
+- (void)testPricePerCharacter {
+    [logic calculateType: ItemPricePerCharacter
+                   price: 20.0
+              extraItemPrice: 12.0
+             andCurrency: @"USD"];
+}
+
+-(void)testPercentSaved {
+    [logic calculateType: ItemPercentSaved
+                   price: 20.0
+              extraItemPrice: 12.0
+             andCurrency: @"USD"];
 }
 
 @end

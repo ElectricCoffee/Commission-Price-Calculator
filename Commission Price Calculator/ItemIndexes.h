@@ -10,4 +10,4 @@ typedef enum {
     ItemChooseOne,
     ItemPricePerCharacter,
     ItemPercentSaved
-} ItemIndexes;
+} ItemIndex;

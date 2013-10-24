@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6847C96218195D12000FADE5 /* WSUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 6847C96118195D12000FADE5 /* WSUtility.m */; };
+		6847C96D1819ABEC000FADE5 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6847C96C1819ABEC000FADE5 /* XCTest.framework */; };
 		6864283E17E061CB00AE0919 /* icon_256x256.png in Resources */ = {isa = PBXBuildFile; fileRef = 6864283D17E061CB00AE0919 /* icon_256x256.png */; };
 		6864284017E061D600AE0919 /* Icon.iconset in Resources */ = {isa = PBXBuildFile; fileRef = 6864283F17E061D600AE0919 /* Icon.iconset */; };
 		68BDFD9417E709850093B2EF /* WSLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 68BDFD9317E709850093B2EF /* WSLogic.m */; };
@@ -23,6 +25,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		6847C9771819ABEC000FADE5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 68EC9B1917DE2C4100A82B4A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 68EC9B2017DE2C4100A82B4A;
+			remoteInfo = "Commission Price Calculator";
+		};
 		68EC9B4517DE2C4200A82B4A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 68EC9B1917DE2C4100A82B4A /* Project object */;
@@ -33,6 +42,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6847C96018195D12000FADE5 /* WSUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSUtility.h; sourceTree = "<group>"; };
+		6847C96118195D12000FADE5 /* WSUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSUtility.m; sourceTree = "<group>"; };
+		6847C96B1819ABEC000FADE5 /* Commission Price Calculator Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Commission Price Calculator Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6847C96C1819ABEC000FADE5 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		6864283D17E061CB00AE0919 /* icon_256x256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_256x256.png; sourceTree = "<group>"; };
 		6864283F17E061D600AE0919 /* Icon.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = Icon.iconset; sourceTree = "<group>"; };
 		68BDFD9217E709850093B2EF /* WSLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WSLogic.h; path = ../WSLogic.h; sourceTree = "<group>"; };
@@ -60,6 +73,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		6847C9681819ABEC000FADE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6847C96D1819ABEC000FADE5 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		68EC9B1E17DE2C4100A82B4A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -80,6 +101,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6847C96318195DD1000FADE5 /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				68BDFD9217E709850093B2EF /* WSLogic.h */,
+				68BDFD9317E709850093B2EF /* WSLogic.m */,
+			);
+			name = Logic;
+			sourceTree = "<group>";
+		};
+		6847C96418195DF5000FADE5 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				6847C96018195D12000FADE5 /* WSUtility.h */,
+				6847C96118195D12000FADE5 /* WSUtility.m */,
+				68D8CB20181904F700C7F831 /* ItemIndexes.h */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
 		68EC9B1817DE2C4100A82B4A = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +137,7 @@
 			children = (
 				68EC9B2117DE2C4100A82B4A /* Commission Price Calculator.app */,
 				68EC9B4117DE2C4200A82B4A /* Commission Price CalculatorTests.octest */,
+				6847C96B1819ABEC000FADE5 /* Commission Price Calculator Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -106,6 +147,7 @@
 			children = (
 				68EC9B2417DE2C4100A82B4A /* Cocoa.framework */,
 				68EC9B4217DE2C4200A82B4A /* SenTestingKit.framework */,
+				6847C96C1819ABEC000FADE5 /* XCTest.framework */,
 				68EC9B2617DE2C4100A82B4A /* Other Frameworks */,
 			);
 			name = Frameworks;
@@ -135,9 +177,8 @@
 		68EC9B2B17DE2C4100A82B4A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				68BDFD9217E709850093B2EF /* WSLogic.h */,
-				68BDFD9317E709850093B2EF /* WSLogic.m */,
-				68D8CB20181904F700C7F831 /* ItemIndexes.h */,
+				6847C96418195DF5000FADE5 /* Util */,
+				6847C96318195DD1000FADE5 /* Logic */,
 				68EC9B2C17DE2C4100A82B4A /* Commission Price Calculator-Info.plist */,
 				68EC9B2D17DE2C4100A82B4A /* InfoPlist.strings */,
 				68EC9B3017DE2C4100A82B4A /* main.m */,
@@ -169,6 +210,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		6847C96A1819ABEC000FADE5 /* Commission Price Calculator Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6847C9791819ABEC000FADE5 /* Build configuration list for PBXNativeTarget "Commission Price Calculator Tests" */;
+			buildPhases = (
+				6847C9671819ABEC000FADE5 /* Sources */,
+				6847C9681819ABEC000FADE5 /* Frameworks */,
+				6847C9691819ABEC000FADE5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6847C9781819ABEC000FADE5 /* PBXTargetDependency */,
+			);
+			name = "Commission Price Calculator Tests";
+			productName = "Commission Price Calculator Tests";
+			productReference = 6847C96B1819ABEC000FADE5 /* Commission Price Calculator Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		68EC9B2017DE2C4100A82B4A /* Commission Price Calculator */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 68EC9B5217DE2C4200A82B4A /* Build configuration list for PBXNativeTarget "Commission Price Calculator" */;
@@ -214,6 +273,11 @@
 				CLASSPREFIX = WS;
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Electric Coffee";
+				TargetAttributes = {
+					6847C96A1819ABEC000FADE5 = {
+						TestTargetID = 68EC9B2017DE2C4100A82B4A;
+					};
+				};
 			};
 			buildConfigurationList = 68EC9B1C17DE2C4100A82B4A /* Build configuration list for PBXProject "Commission Price Calculator" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -229,11 +293,19 @@
 			targets = (
 				68EC9B2017DE2C4100A82B4A /* Commission Price Calculator */,
 				68EC9B4017DE2C4200A82B4A /* Commission Price CalculatorTests */,
+				6847C96A1819ABEC000FADE5 /* Commission Price Calculator Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		6847C9691819ABEC000FADE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		68EC9B1F17DE2C4100A82B4A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -273,10 +345,18 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		6847C9671819ABEC000FADE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		68EC9B1D17DE2C4100A82B4A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6847C96218195D12000FADE5 /* WSUtility.m in Sources */,
 				68EC9B3117DE2C4100A82B4A /* main.m in Sources */,
 				68EC9B3817DE2C4100A82B4A /* WSAppDelegate.m in Sources */,
 				68BDFD9417E709850093B2EF /* WSLogic.m in Sources */,
@@ -294,6 +374,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		6847C9781819ABEC000FADE5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 68EC9B2017DE2C4100A82B4A /* Commission Price Calculator */;
+			targetProxy = 6847C9771819ABEC000FADE5 /* PBXContainerItemProxy */;
+		};
 		68EC9B4617DE2C4200A82B4A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 68EC9B2017DE2C4100A82B4A /* Commission Price Calculator */;
@@ -337,6 +422,57 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		6847C97A1819ABEC000FADE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Commission Price Calculator.app/Contents/MacOS/Commission Price Calculator";
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Commission Price Calculator Tests/Commission Price Calculator Tests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "Commission Price Calculator Tests/Commission Price Calculator Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		6847C97B1819ABEC000FADE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Commission Price Calculator.app/Contents/MacOS/Commission Price Calculator";
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Commission Price Calculator Tests/Commission Price Calculator Tests-Prefix.pch";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "Commission Price Calculator Tests/Commission Price Calculator Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
 		68EC9B5017DE2C4200A82B4A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -451,6 +587,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		6847C9791819ABEC000FADE5 /* Build configuration list for PBXNativeTarget "Commission Price Calculator Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6847C97A1819ABEC000FADE5 /* Debug */,
+				6847C97B1819ABEC000FADE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		68EC9B1C17DE2C4100A82B4A /* Build configuration list for PBXProject "Commission Price Calculator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
