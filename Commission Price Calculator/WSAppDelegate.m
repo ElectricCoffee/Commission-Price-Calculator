@@ -7,12 +7,8 @@
 //
 
 #import "WSAppDelegate.h"
-
-typedef enum {
-    ItemChooseOne,
-    ItemPricePerCharacter,
-    ItemPercentSaved
-} ItemIndexes;
+#import "ItemIndexes.h" // defines the enum that is used in the switch,
+                        // it's used in a separate header so I can use it across classes
 
 void alert(NSString* message, NSString* informative) {
     NSAlert* alert = [[NSAlert alloc] init];

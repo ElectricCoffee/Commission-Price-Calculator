@@ -37,6 +37,7 @@
 		6864283F17E061D600AE0919 /* Icon.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = Icon.iconset; sourceTree = "<group>"; };
 		68BDFD9217E709850093B2EF /* WSLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WSLogic.h; path = ../WSLogic.h; sourceTree = "<group>"; };
 		68BDFD9317E709850093B2EF /* WSLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WSLogic.m; path = ../WSLogic.m; sourceTree = "<group>"; };
+		68D8CB20181904F700C7F831 /* ItemIndexes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ItemIndexes.h; sourceTree = "<group>"; };
 		68EC9B2117DE2C4100A82B4A /* Commission Price Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Commission Price Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		68EC9B2417DE2C4100A82B4A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		68EC9B2717DE2C4100A82B4A /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -141,6 +142,7 @@
 				68EC9B3017DE2C4100A82B4A /* main.m */,
 				68EC9B3217DE2C4100A82B4A /* Commission Price Calculator-Prefix.pch */,
 				68EC9B3317DE2C4100A82B4A /* Credits.rtf */,
+				68D8CB20181904F700C7F831 /* ItemIndexes.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";

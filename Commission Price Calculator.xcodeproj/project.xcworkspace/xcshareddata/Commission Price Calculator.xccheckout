@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>6C9A5C30-4F39-439C-BF09-F483D8CE6271</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Commission Price Calculator</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>6546CF32-4A1F-4054-A310-01F2763EB593</key>
+		<string>https://github.com/ElectricCoffee/Commission-Price-Calculator.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Commission Price Calculator.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>6546CF32-4A1F-4054-A310-01F2763EB593</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/ElectricCoffee/Commission-Price-Calculator.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>6546CF32-4A1F-4054-A310-01F2763EB593</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>6546CF32-4A1F-4054-A310-01F2763EB593</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Commission Price Calculator</string>
+		</dict>
+	</array>
+</dict>
+</plist>

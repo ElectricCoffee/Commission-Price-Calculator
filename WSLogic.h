@@ -10,6 +10,6 @@
 
 @interface WSLogic : NSObject
 
-
+-(id)calculateType: (NSInteger)enumerator price: (double)price extraItems:(double)extraItems andCurrency: (NSString*)currency;
 
 @end
