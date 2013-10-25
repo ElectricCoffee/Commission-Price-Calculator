@@ -1,6 +1,8 @@
 Commission-Price-Calculator
 ===========================
 
+###Note that this application still isn't finished, use at your own risk!
+
 The Mac version of my windows application of the same name.
 
 The application is made for artists to make it easier for them to calculate the prices of their commissions 
