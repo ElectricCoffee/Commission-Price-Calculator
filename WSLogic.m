@@ -10,60 +10,51 @@
 #import "WSUtility.h"
 #import "ItemIndexes.h" // using the global enum to ensure compatibility with the code in WSAppDelegate.m
 
-// hidden helper function designed to reduce the size of the "writeToFileWithSelector: price: andModifier:" method
-// being a function it doesn't have much overhead compared to a method
-double invokeCalculator(id object, SEL method, double price, double extraItemPrice, int index) {
-    double returnValue = 0xDEAD;
-    
-    if([object respondsToSelector:method]) {
-        NSLog(@"object responded sucessfully");
-        NSInvocation* invocation =
-            [NSInvocation invocationWithMethodSignature: [object methodSignatureForSelector: method]];
-        [invocation setTarget:   object];                     // index 0 (hidden)
-        [invocation setSelector: method];                     // index 1 (hidden)
-        [invocation setArgument: &price          atIndex: 2]; // index 2
-        [invocation setArgument: &extraItemPrice atIndex: 3]; // and so on
-        [invocation setArgument: &index          atIndex: 4];
-        [invocation invoke];
-        [invocation getReturnValue: &returnValue];
-    }
-    
-    return returnValue; // if it's 0xDEAD I know it's an error
+typedef double (*CalcFunc)(double, double, int); // defining function signature, so I can call the functions below by name
+
+double calculatePercent(double price, double modifier, int index) {
+    return ((index + 1) * price) - ((index + 1) * price) * (modifier / 100);
+}
+
+double calculatePrice(double price, double modifier, int index) {
+    return price + modifier * index;
 }
 
 @implementation WSLogic
 
 // MARK: Private Members
+-(double) applyCalculationWithFunction: (CalcFunc) fun price: (double) price modifier: (double) extraItemPrice andIndex: (int) i {
+    return fun (price, extraItemPrice, i);
+}
+
 //TODO: finish the actual file-writing part of the method
--(void) writeToFileWithSelector: (SEL) selector price: (double) price andModifier: (double) extraItems {
+-(void) writeToFileWithSelector: (CalcFunc) fun price: (double) price andModifier: (double) extraItems {
     double currentValue;
     for (int i = 1; i < 10; i++) {
-        currentValue = invokeCalculator(self, selector, price, extraItems, i);
-        NSLog(@"%i current value: %f", i, currentValue);
+        currentValue = [self applyCalculationWithFunction: fun price: price modifier: extraItems andIndex: i];
+        NSLog(@"%ith current value: %.2f", i, currentValue);
     }
-}
-
--(double)calculatePercentWithPrice: (double)price andModifier: (double) modifier andIndex: (int) count {
-    return ((count + 1) * price) - ((count + 1) * price) * (modifier / 100);
-}
-
--(double)calculatePriceWithPrice: (double)price andModifier: (double) modifier andIndex: (int) count {
-    return price + modifier * count;
 }
 
 // MARK: Public Members
 -(void)calculateType: (ItemIndex)enumerator price: (double)price extraItemPrice: (double)extraItemPrice andCurrency: (NSString*)currency {
     switch (enumerator) {
         case ItemPricePerCharacter:
-            [self writeToFileWithSelector: @selector(calculatePriceWithPrice:andModifier:andIndex:)
+            [self writeToFileWithSelector: calculatePrice
                                     price: price
                               andModifier: extraItemPrice];
             break;
             
         case ItemPercentSaved:
-            [self writeToFileWithSelector: @selector(calculatePriceWithPrice:andModifier:andIndex:)
+            [self writeToFileWithSelector: calculatePercent
                                     price: price
                               andModifier: extraItemPrice];
+            break;
+            
+        
+        case ItemChooseOne:
+            [WSUtility alertWithMessage: @"Error"
+                         andInformative: @"Please choose a calculation type!"];
             break;
             
         default: // unreachable

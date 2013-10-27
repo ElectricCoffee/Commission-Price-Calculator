@@ -10,13 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WSLogic.m"
-            timestampString = "404343615.153022"
+            timestampString = "404570052.239806"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "82"
-            endingLineNumber = "82"
-            landmarkName = "@implementation WSLogic"
-            landmarkType = "3">
+            startingLineNumber = "74"
+            endingLineNumber = "74">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -26,28 +24,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WSLogic.m"
-            timestampString = "404343615.153022"
+            timestampString = "404569629.442796"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
             landmarkName = "-writeToFileWithSelector:price:andModifier:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "WSLogic.m"
-            timestampString = "404343615.153022"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "61"
-            endingLineNumber = "61"
-            landmarkName = "-calculateType:price:extraItemPrice:andCurrency:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

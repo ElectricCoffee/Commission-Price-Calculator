@@ -11,13 +11,19 @@
 #import "ItemIndexes.h"
 
 @implementation Commission_Price_CalculatorTests {
-    WSLogic* logic;
+    WSLogic* _logic;
+    double _price, _extraPrice;
+    NSString* _currency;
 }
 
 - (void)setUp {
     [super setUp];
     
-    logic = [WSLogic new];
+    _price = 20.0;
+    _extraPrice = 12.0;
+    _currency = @"USD";
+    
+    _logic = [WSLogic new];
 }
 
 - (void)tearDown {
@@ -26,17 +32,24 @@
 }
 
 - (void)testPricePerCharacter {
-    [logic calculateType: ItemPricePerCharacter
-                   price: 20.0
-              extraItemPrice: 12.0
-             andCurrency: @"USD"];
+    [_logic calculateType: ItemPricePerCharacter
+                    price: _price
+           extraItemPrice: _extraPrice
+              andCurrency: _currency];
 }
 
 -(void)testPercentSaved {
-    [logic calculateType: ItemPercentSaved
-                   price: 20.0
-              extraItemPrice: 12.0
-             andCurrency: @"USD"];
+    [_logic calculateType: ItemPercentSaved
+                    price: _price
+           extraItemPrice: _extraPrice
+              andCurrency: _currency];
+}
+
+-(void)testSelectItem {
+    [_logic calculateType: ItemChooseOne
+                    price: _price
+           extraItemPrice: _extraPrice
+              andCurrency: _currency];
 }
 
 @end
